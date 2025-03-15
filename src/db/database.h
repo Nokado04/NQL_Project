@@ -6,6 +6,15 @@
 // Número máximo de tablas
 #define MAX_TABLES 100
 
+// Estructura de la base de datos
+typedef struct {
+    Table **tables;
+    int num_tables;
+    char *name;	
+    int max_tables;
+} Database;
+
+
 // Inicializa la base de datos
 void db_init();
 
